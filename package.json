@@ -1,0 +1,19 @@
+{
+  "name": "@neondoll/components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neondoll/components.git"
+  },
+  "author": "neondoll",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neondoll/components/issues"
+  },
+  "homepage": "https://github.com/neondoll/components#readme"
+}
