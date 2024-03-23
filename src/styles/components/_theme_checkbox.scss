@@ -1,0 +1,43 @@
+.nd-theme-checkbox {
+  &__input {
+    position: absolute;
+    appearance: none;
+  }
+  
+  &__input:checked + &__label > &__ball {
+    background-color: var(--nd-bg-color, #{$nd-white});
+    transform: translateX(2.375rem); /* 38px */
+  }
+  
+  &__label {
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    width: 4.375rem; /* 70px */
+    height: 2rem; /* 32px */
+    padding: 0.3125rem; /* 5px */
+    background-color: var(--nd-theme-checkbox-label-color, #{$nd-theme-checkbox-label-color});
+    border-radius: 3.125rem; /* 50px */
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  &__icon {
+    width: 1.5rem; /* 24px */
+    height: 1.5rem; /* 24px */
+  }
+  
+  &__ball {
+    position: absolute;
+    top: 0.125rem; /* 2px */
+    bottom: 0.125rem; /* 2px */
+    left: 0.125rem; /* 2px */
+    width: 1.75rem; /* 28px */
+    height: 1.75rem; /* 28px */
+    border-radius: 50%;
+    background-color: var(--nd-theme-checkbox-ball-color, #{$nd-primary-light});
+    transition: transform 300ms linear;
+  }
+}

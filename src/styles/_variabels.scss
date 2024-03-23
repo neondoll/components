@@ -1,0 +1,29 @@
+$nd-dark: #202020;
+$nd-primary-dark: #7f5af0;
+$nd-primary-light: #6c63ff;
+$nd-white: #ffffff;
+
+$nd-theme-checkbox-ball-color: var(--nd-primary, #{$nd-primary-light});
+$nd-theme-checkbox-label-color: #e5e5e5;
+
+:root {
+  --nd-dark: #{$nd-dark};
+  --nd-primary-dark: #{$nd-primary-dark};
+  --nd-primary-light: #{$nd-primary-light};
+  --nd-white: #{$nd-white};
+  
+  --nd-primary: var(--nd-primary-light, #{$nd-primary-light});
+  
+  --nd-bg-color: var(--nd-white, #{$nd-white});
+  --nd-text-color: var(--nd-dark, #{$nd-dark});
+  
+  --nd-theme-checkbox-ball-color: #{$nd-theme-checkbox-ball-color};
+  --nd-theme-checkbox-label-color: #{$nd-theme-checkbox-label-color};
+}
+
+.dark {
+  --nd-primary: var(--nd-primary-dark, #{$nd-primary-dark});
+  
+  --nd-bg-color: var(--nd-dark, #{$nd-dark});
+  --nd-text-color: var(--nd-white, #{$nd-white});
+}
